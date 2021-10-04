@@ -50,10 +50,10 @@ void draw(){
   if(mouseX>300 && mouseX<380 && mouseY>300 && mouseY<380){
     pushMatrix(); // Método junto con popMatrix() para sacar el origen de coordenadas de su sitio
     translate(200, 200); // Mueve origen de coordenadas
-    rotate(radians(deg)); // 
-    deg++; // 
+    rotate(radians(deg)); // Rota la matriz(Transforma deg d º a radianes)
+    deg++; // Suma 1 a la variable sucesivamente, x lo q rota sucesivamente
     fill(0, 255, 0);
     rect(-100, -100, 200, 200);
-    popMatrix();
+    popMatrix(); // Ancla el cuadrado y lo muestra en pantalla
   }
 }
