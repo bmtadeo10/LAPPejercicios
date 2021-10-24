@@ -13,8 +13,8 @@ textSize(60);
 noStroke(); // Borde deshabilitado, lo que pintes saldrá sin borde
 fondo = 255; // Asignamos color al fondo
 pos = 0; // Inicialmente valor 0-que no esté
-deg = 0; //?
-esc = 1; //?
+deg = 0; 
+esc = 1; 
 }
 
 void draw(){
@@ -25,7 +25,7 @@ void draw(){
   rect(20, 300, 80, 80);
   rect(300, 300, 80, 80);
   
-  if(mouseX>20 && mouseX<100 && mouseY>20 && mouseY<100)fondo=0; //?
+  if(mouseX>20 && mouseX<100 && mouseY>20 && mouseY<100)fondo=0; 
   else fondo=255;
   
   if(mouseX>20 && mouseX<100 && mouseY>300 && mouseY<380&&pos<300){ // pos<300 hace que text s mueva hasta 300 q x su largo coincide con el fin d la pantalla y como a partir d ahí sería +300 vuelve a empezar
